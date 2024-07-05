@@ -1,0 +1,46 @@
+@keyframes reveal {
+	from {
+		opacity: 0;
+		transform: translateY(300px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.image {
+		display: block;
+    width: 60%;
+    height: auto;
+		margin: 0 auto;
+
+}
+
+.revealing-image {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 0% cover 50%;
+}
+
+.reveal {
+	display: block;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.image-center {
+	display: block;
+	margin: 40px auto 0 auto;
+}

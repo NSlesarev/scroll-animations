@@ -3,6 +3,7 @@
 @import url('/src/styles/allStyle/fonts.css');
 @import url('/src/styles/allStyle/test.style.css');
 @import url('/src/styles/allStyle/reset-style.css');
+@import url('/src/styles/allStyle/carousel-style.css');
 
 body {
     font-family: 'Afacad';
@@ -12,6 +13,12 @@ body {
     
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(105deg, #f5f7fa, #c3cfe2);
     color: #333;
+}
+
+span {
+    padding: 0 1vw 0 1vw;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 2px 2px rgb(188, 187, 187);
 }

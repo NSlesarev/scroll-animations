@@ -17,10 +17,14 @@
     margin: 4vw 4vw;
 }
 .text-two {
-    color: #007BFF;
+    color: #06294d;
     font-size: clamp(4.9vw, 4.9vw, 25.9vw);
     margin-top: 1.4vw;
-    padding: 4vw 4vw;
+    padding: 3vw 3vw;
+    text-align: center;
+    /* background-color: hsl(34, 78%, 91%, 0.5); */
+    box-shadow: 10px 5px 5px rgb(154, 152, 152);
+    background-color: hsla(208, 19%, 55%, 0.6);
 }
 .paragraf {
     font-size: clamp(2.8vw, 2.8vw, 14.8vw);
@@ -60,4 +64,9 @@ img {
     font-size: clamp(4.9vw, 4.9vw, 25.9vw);
     margin-top: 1.4vw;
     padding: 4vw 4vw;
+}
+
+.img {
+    width: 50vw;
+    height: auto;
 }

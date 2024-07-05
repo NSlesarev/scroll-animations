@@ -21,49 +21,52 @@
     </section>
     <section class="sectiontwo">
       <div class="title">
-          <h1 class="text-two">Технология и использование анимации</h1>
+          <h1 class="text-two"><span>Horizontal
+            scroll
+            section</span><br/>Технология и использование анимации</h1>
           <p class="paragraf">Анимация в веб-разработке — это мощный инструмент, который позволяет создавать динамичные и интерактивные пользовательские интерфейсы. Она не только улучшает визуальное восприятие сайта, но и помогает эффективно передавать информацию и направлять внимание пользователя.</p>
           <h1 class="text-two">Технология и использование анимации</h1>
           <h2 class="text-two">Создание скролл анимации</h2>
           <p class="paragraf">Код который я вам покажу описывает секцию на веб-странице с горизонтальной анимацией при скроллинге, используя CSS анимации и свойства, связанные с таймлайном просмотра. Давайте разберем его шаг за шагом.</p>
           <p class="paragraf">Первое что хочу показать, это базовую разметку Html</p>
-          <img src="/src/img/code11.jpg" alt="">
+          <img src="/src/img/scroll/code11.jpg" alt="">
           <h2 class="text-two">CSS Анимация</h2>
-          <img src="/src/img/code2.jpg" alt="">
+          <img src="/src/img/scroll/code2.jpg" alt="">
           <p class="paragraf">Здесь создается анимация с именем move, которая перемещает элемент по горизонтали так, что его правый край выравнивается с правым краем вьюпорта (окна просмотра).</p>
-          <h2 class="text-two">Стили для #sectionPin</h2>
-          <img src="/src/img/code3.jpg" alt="">
+          <h2 class="text-two">Стили для <span>#sectionPin</span></h2>
+          <img src="/src/img/scroll/code3.jpg" alt="">
           <ul class="ul">
-            <li class="li">height: 500vh: Устанавливает высоту секции равной 500 высотам вьюпорта. Это создает достаточно места для вертикального скроллинга.</li>
-            <li class="li">overflow: visible: Делает так, чтобы содержимое, выходящее за границы элемента, было видно, что нужно для работы position: sticky.</li>
-            <li class="li">view-timeline-name: --section-pin-tl: Определяет имя таймлайна просмотра, который будет использован для синхронизации анимации с скроллингом.</li>
-            <li class="li">view-timeline-axis: block: Указывает, что таймлайн будет синхронизирован по блочной оси (вертикально).</li>
+            <li class="li"><span>height: 500vh:</span>  Устанавливает высоту секции равной 500 высотам вьюпорта.Это создает достаточно места для вертикального скроллинга.</li>
+            <li class="li"><span>overflow: visible:</span> Делает так, чтобы содержимое, выходящее за границы элемента, было видно, что нужно для работы position: sticky.</li>
+            <li class="li"><span>view-timeline-name: --section-pin-tl:</span> Определяет имя таймлайна просмотра, который будет использован для синхронизации анимации с скроллингом.</li>
+            <li class="li"><span>view-timeline-axis: block:</span> Указывает, что таймлайн будет синхронизирован по блочной оси (вертикально).</li>
           </ul>
-          <h2 class="text-two">Стили для .pin-wrap-sticky</h2>
-          <img src="/src/img/code4.jpg" alt="">
+          <h2 class="text-two">Стили для <span>.pin-wrap-sticky</span></h2>
+          <img src="/src/img/scroll/code4.jpg" alt="">
           <ul class="ul">
-            <li class="li">height: 100vh и width: 100vw: Устанавливают размеры равными высоте и ширине вьюпорта.</li>
-            <li class="li">position: sticky: Делает элемент липким, так что он остается закрепленным в верхней части вьюпорта при скроллинге.</li>
-            <li class="li">top: 0: Закрепляет элемент на верхней границе вьюпорта.</li>
-            <li class="li">overflow-x: hidden: Прячет содержимое, выходящее за границы по горизонтали.</li>
+            <li class="li"><span>height: 100vh и width: 100vw:</span> Устанавливают размеры равными высоте и ширине вьюпорта.</li>
+            <li class="li"><span>position: sticky: </span>Делает элемент липким, так что он остается закрепленным в верхней части вьюпорта при скроллинге.</li>
+            <li class="li"><span>top: 0:</span> Закрепляет элемент на верхней границе вьюпорта.</li>
+            <li class="li"><span>overflow-x: hidden:</span> Прячет содержимое, выходящее за границы по горизонтали.</li>
           </ul>
-          <h2 class="text-two">Стили для .pin-wrap</h2>
-          <img src="/src/img/code5.jpg" alt="">
+          <h2 class="text-two">Стили для <span>.pin-wrap</span></h2>
+          <img src="/src/img/scroll/code5.jpg" alt="">
           <ul class="ul">
-            <li class="li">height: 100vh и width: 250vmax: Устанавливают высоту равной высоте вьюпорта и ширину, значительно превышающую ширину вьюпорта (250 раз).</li>
-            <li class="li">will-change: transform: Указывает браузеру, что в будущем у этого элемента будет изменяться свойство transform, оптимизируя производительность.</li>
-            <li class="li">animation: linear move forwards: Применяет анимацию move с линейной скоростью и делает так, чтобы она воспроизводилась один раз до конца.</li>
-            <li class="li">animation-timeline: --section-pin-tl: Привязывает анимацию к таймлайну просмотра.</li>
-            <li class="li">animation-range: contain 0% contain 100%: Определяет диапазон таймлайна просмотра, в котором будет воспроизводиться анимация, от 0% до 100%.</li>
+            <li class="li"><span>height: 100vh и width: 250vmax:</span> Устанавливают высоту равной высоте вьюпорта и ширину, значительно превышающую ширину вьюпорта (250 раз).</li>
+            <li class="li"><span>will-change: transform:</span> Указывает браузеру, что в будущем у этого элемента будет изменяться свойство transform, оптимизируя производительность.</li>
+            <li class="li"><span>animation: linear move forwards:</span> Применяет анимацию move с линейной скоростью и делает так, чтобы она воспроизводилась один раз до конца.</li>
+            <li class="li"><span>animation-timeline: --section-pin-tl:</span> Привязывает анимацию к таймлайну просмотра.</li>
+            <li class="li"><span>animation-range: contain 0% contain 100%:</span> Определяет диапазон таймлайна просмотра, в котором будет воспроизводиться анимация, от 0% до 100%.</li>
           </ul>
           <h2 class="text-two">Подведем итоги</h2>
           <ol class="ul">
-            <li class="li">Создание анимации: Сначала создается анимация move, которая перемещает элемент по горизонтали.</li>
-            <li class="li">Настройка секции: #sectionPin получает большую высоту (500vh) для создания пространства для вертикального скроллинга. Настраивается таймлайн просмотра.</li>
-            <li class="li">Настройка липкого контейнера: .pin-wrap-sticky становится липким, оставаясь на месте при скроллинге.</li>
-            <li class="li">Настройка анимации содержимого: .pin-wrap растягивается по горизонтали и анимация привязывается к таймлайну просмотра, синхронизируясь с вертикальным скроллингом.</li>
+            <li class="li">Создание анимации: Сначала создается анимация <span>move</span>, которая перемещает элемент по горизонтали.</li>
+            <li class="li">Настройка секции: <span>#sectionPin</span> получает большую высоту (500vh) для создания пространства для вертикального скроллинга. Настраивается таймлайн просмотра.</li>
+            <li class="li">Настройка липкого контейнера: <span>.pin-wrap-sticky</span> становится липким, оставаясь на месте при скроллинге.</li>
+            <li class="li">Настройка анимации содержимого: <span>.pin-wrap</span> растягивается по горизонтали и анимация привязывается к таймлайну просмотра, синхронизируясь с вертикальным скроллингом.</li>
           </ol>
-          <p class="paragraf">Таким образом, при скроллинге страницы элемент .pin-wrap будет анимировано перемещаться по горизонтали, создавая эффект горизонтальной прокрутки внутри вертикально прокручиваемой секции.</p>
+          <p class="paragraf">Таким образом, при скроллинге страницы элемент <span>.pin-wrap</span> будет анимировано перемещаться по горизонтали, создавая эффект горизонтальной прокрутки внутри вертикально прокручиваемой секции.</p>
+          <h1 class="text-two">И покажу как это выглядит</h1>
       </div>
     </section>
     <section class="test">
@@ -76,11 +79,73 @@
             <img class="pin" src="https://img.freepik.com/free-photo/assortment-of-colored-plant-leaves_23-2149337900.jpg?size=626&ext=jpg" alt="">
             <img class="pin" src="https://img.freepik.com/free-photo/beautiful-palm-tree-in-vivid-colors_23-2151591807.jpg?size=626&ext=jpg" alt="">
             <img class="pin" src="https://img.freepik.com/premium-photo/guy-on-the-edge-of-the-prelude-to-preikestolen-norway_7509-960.jpg?size=626&ext=jpg&ga=GA1.1.1818441046.1720137018&semt=ais_user" alt="">
-            <h1 class="text-t">Спасибо за внимание!</h1>
           </div>
          
         </div>
       </div>
+    </section>
+
+    <section class="sectiontwo">
+        <div class="title">
+          <h1 class="text-two"><span>Carousel with markers</span><br/>Технология и использование анимации</h1>
+          <h2 class="text-two">Создание карусель анимации</h2>
+          <p class="paragraf">Этот код который я вам покажу описывает карусель изображений, где элементы списка .entries скроллируются горизонтально, а маркеры .markers a синхронизированы с этой прокруткой. Давайте разберем его шаг за шагом.</p>
+          <img class="img" src="/src/img/carusel/code1.png" alt="">
+          <p class="paragraf">Это относительно базовая разметка для карусели, в которой есть контейнер <span>div</span>, в нем лежит два списка <span>.entries</span> и <span>.markers</span></p>
+          <h2 style="font-size: clamp(3vw, 3vw, 10vw);" class="text-two">Стили для <span>[data-component="carousel"]</span></h2>
+          <img class="img" src="/src/img/carusel/code2.png" alt="">
+          <ol class="ul">
+            <li class="li"><span>.entries { scroll-timeline: --carousel x; }:</span> Определяет таймлайн прокрутки с именем <span>--carousel</span> и синхронизирует его с горизонтальной осью прокрутки (x).</li>
+            <li class="li"><span>.markers a { animation-timeline: --carousel; }:</span> Привязывает анимации маркеров к таймлайну<span>--carousel.</span></li>
+          </ol>
+          <h2 class="text-two">Стили для таймлайна</h2>
+          <img class="img" src="/src/img/carusel/code3.png" alt="">
+          <ol class="ul">
+            <li class="li"><span>timeline-scope: --carousel;:</span> Определяет область действия таймлайна <span>--carousel.</span></li>
+          </ol>
+          <h2 class="text-two">Стили для маркеров</h2>
+          <img class="img" src="/src/img/carusel/code4.png" alt="">
+          <ol class="ul">
+            <li class="li"><span>animation-range: calc((var(--i) - 1) * 20%) calc(var(--i) * 20% + 1px);:</span> Определяет диапазон анимации для каждого маркера, основанный на CSS-переменной --i.</li>
+          </ol>
+          <h2 class="text-two">Шаги выполнения</h2>
+          <ol class="ul">
+            <li class="li">Определение HTML структуры: <br/><span>div</span> с атрибутом <span>data-component="carousel"</span> содержит два списка: <span>.entries</span> для элементов карусели и <span>markers</span>. для маркеров.<br/></li>
+            
+            <li class="li">Стили для контейнера карусели:
+              <hr> 
+              <br/>Внутри контейнера карусели <span>[data-component="carousel"]</span> определяются стили для <span>.entries и .markers a.</span><br/> 
+              <hr>
+              <span>.entries</span> получает таймлайн прокрутки <span>--carousel</span>, синхронизированный с горизонтальной осью прокрутки.<br/>
+              <hr>
+              <span>.markers a</span> привязывают свои анимации к этому таймлайну.
+            </li>
+            <li class="li">Определение области действия таймлайна:
+
+              <span>timeline-scope: --carousel;</span> задает область действия таймлайна <span>--carousel</span> для контейнера карусели.</li>
+            <li class="li">Настройка анимации для маркеров:<hr>
+              <br/>
+
+              <span>animation-range: calc((var(--i) - 1) * 20%) calc(var(--i) * 20% + 1px);</span> устанавливает диапазон анимации для каждого маркера, где <span>var(--i)</span> - это индекс маркера.<br/>
+              <hr>
+              Диапазон анимации каждого маркера зависит от его позиции. Например, если --i равен 1, анимация будет активироваться на первых 20% прокрутки, если --i равен 2, то на вторых 20%, и так далее.</li>
+          </ol>
+          <h2 class="text-two">Подведем итоги</h2>
+          <p class="paragraf">Этот код создает карусель изображений с маркерами, которые синхронизированы с горизонтальной прокруткой списка <span>.entries</span>. Таймлайн прокрутки <span>--carousel</span> управляет анимацией маркеров, показывая соответствующий маркер в зависимости от положения прокрутки карусели.</p>
+          <h2 class="text-two">Перейдем к демо</h2>  
+      </div>
+    </section>
+    <section data-component="carousel">
+      <ul class="entries" tabindex="0">
+        <li><a name="carousel_01"><img class="slide" src="https://img.freepik.com/premium-photo/scenic-view-of-rocks-in-sea-against-clear-sky_1048944-19066138.jpg?size=626&ext=jpg&ga=GA1.1.1143220769.1720183557&semt=ais_user" alt="" draggable="false"></a></li>
+        <li><a name="carousel_02"><img class="slide" src="https://img.freepik.com/premium-photo/cluster-of-purple-and-blue-leaves_118124-302144.jpg?size=626&ext=jpg&ga=GA1.1.1143220769.1720183557&semt=ais_user" alt="" draggable="false"></a></li>
+        <li><a name="carousel_03"><img class="slide" src="https://img.freepik.com/free-photo/beautiful-scenery-of-green-trees-near-the-body-of-water-over-high-mountains_181624-18193.jpg?size=626&ext=jpg&ga=GA1.1.1143220769.1720183557&semt=ais_user" alt="" draggable="false"></a></li>
+      </ul>
+      <ul class="markers">
+        <li class="Li"><a href="#carousel_01"><span class="sr-only">Photo 1</span></a></li>
+        <li class="Li"><a href="#carousel_02"><span class="sr-only">Photo 2</span></a></li>
+        <li class="Li"><a href="#carousel_03"><span class="sr-only">Photo 3</span></a></li>
+      </ul>
     </section>
   </body>
 </html>

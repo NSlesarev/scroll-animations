@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <title>Скролл-Анимации</title>
+  </head>
+  <body>
+    <section class="sectionPin">
+      <div class="pin-wrap-sticky">
+        <div class="pin-wrap">
+          <div class="q"></div>
+          <div class="content">
+            <h1 class="text">Scroll-driven Animations</h1>
+            <p class="text-i">created by <br/> Slesarev Nikita</p>
+          </div>       
+        </div>
+      </div>
+    </section>
+    <section class="sectiontwo">
+      <div class="title">
+          <h1 class="text-two">Технология и использование анимации</h1>
+          <p class="paragraf">Анимация в веб-разработке — это мощный инструмент, который позволяет создавать динамичные и интерактивные пользовательские интерфейсы. Она не только улучшает визуальное восприятие сайта, но и помогает эффективно передавать информацию и направлять внимание пользователя.</p>
+          <h1 class="text-two">Технология и использование анимации</h1>
+          <h2 class="text-two">Создание скролл анимации</h2>
+          <p class="paragraf">Код который я вам покажу описывает секцию на веб-странице с горизонтальной анимацией при скроллинге, используя CSS анимации и свойства, связанные с таймлайном просмотра. Давайте разберем его шаг за шагом.</p>
+          <p class="paragraf">Первое что хочу показать, это базовую разметку Html</p>
+          <img src="/src/img/code11.jpg" alt="">
+          <h2 class="text-two">CSS Анимация</h2>
+          <img src="/src/img/code2.jpg" alt="">
+          <p class="paragraf">Здесь создается анимация с именем move, которая перемещает элемент по горизонтали так, что его правый край выравнивается с правым краем вьюпорта (окна просмотра).</p>
+          <h2 class="text-two">Стили для #sectionPin</h2>
+          <img src="/src/img/code3.jpg" alt="">
+          <ul class="ul">
+            <li class="li">height: 500vh: Устанавливает высоту секции равной 500 высотам вьюпорта. Это создает достаточно места для вертикального скроллинга.</li>
+            <li class="li">overflow: visible: Делает так, чтобы содержимое, выходящее за границы элемента, было видно, что нужно для работы position: sticky.</li>
+            <li class="li">view-timeline-name: --section-pin-tl: Определяет имя таймлайна просмотра, который будет использован для синхронизации анимации с скроллингом.</li>
+            <li class="li">view-timeline-axis: block: Указывает, что таймлайн будет синхронизирован по блочной оси (вертикально).</li>
+          </ul>
+          <h2 class="text-two">Стили для .pin-wrap-sticky</h2>
+          <img src="/src/img/code4.jpg" alt="">
+          <ul class="ul">
+            <li class="li">height: 100vh и width: 100vw: Устанавливают размеры равными высоте и ширине вьюпорта.</li>
+            <li class="li">position: sticky: Делает элемент липким, так что он остается закрепленным в верхней части вьюпорта при скроллинге.</li>
+            <li class="li">top: 0: Закрепляет элемент на верхней границе вьюпорта.</li>
+            <li class="li">overflow-x: hidden: Прячет содержимое, выходящее за границы по горизонтали.</li>
+          </ul>
+          <h2 class="text-two">Стили для .pin-wrap</h2>
+          <img src="/src/img/code5.jpg" alt="">
+          <ul class="ul">
+            <li class="li">height: 100vh и width: 250vmax: Устанавливают высоту равной высоте вьюпорта и ширину, значительно превышающую ширину вьюпорта (250 раз).</li>
+            <li class="li">will-change: transform: Указывает браузеру, что в будущем у этого элемента будет изменяться свойство transform, оптимизируя производительность.</li>
+            <li class="li">animation: linear move forwards: Применяет анимацию move с линейной скоростью и делает так, чтобы она воспроизводилась один раз до конца.</li>
+            <li class="li">animation-timeline: --section-pin-tl: Привязывает анимацию к таймлайну просмотра.</li>
+            <li class="li">animation-range: contain 0% contain 100%: Определяет диапазон таймлайна просмотра, в котором будет воспроизводиться анимация, от 0% до 100%.</li>
+          </ul>
+          <h2 class="text-two">Подведем итоги</h2>
+          <ol class="ul">
+            <li class="li">Создание анимации: Сначала создается анимация move, которая перемещает элемент по горизонтали.</li>
+            <li class="li">Настройка секции: #sectionPin получает большую высоту (500vh) для создания пространства для вертикального скроллинга. Настраивается таймлайн просмотра.</li>
+            <li class="li">Настройка липкого контейнера: .pin-wrap-sticky становится липким, оставаясь на месте при скроллинге.</li>
+            <li class="li">Настройка анимации содержимого: .pin-wrap растягивается по горизонтали и анимация привязывается к таймлайну просмотра, синхронизируясь с вертикальным скроллингом.</li>
+          </ol>
+          <p class="paragraf">Таким образом, при скроллинге страницы элемент .pin-wrap будет анимировано перемещаться по горизонтали, создавая эффект горизонтальной прокрутки внутри вертикально прокручиваемой секции.</p>
+      </div>
+    </section>
+    <section class="test">
+      <div class="sticky-pin">
+        <div class="wrap-pin">
+          <div class="q"></div>
+          <div class="container">
+            <img class="pin" src="https://img.freepik.com/free-photo/beautiful-mountain-forest-landscape_23-2149063036.jpg?size=626&ext=jpg" alt="">
+            <img class="pin" src="https://img.freepik.com/free-photo/mountainous-nature-landscape-with-river_23-2150705792.jpg?size=626&ext=jpg" alt="">
+            <img class="pin" src="https://img.freepik.com/free-photo/assortment-of-colored-plant-leaves_23-2149337900.jpg?size=626&ext=jpg" alt="">
+            <img class="pin" src="https://img.freepik.com/free-photo/beautiful-palm-tree-in-vivid-colors_23-2151591807.jpg?size=626&ext=jpg" alt="">
+            <img class="pin" src="https://img.freepik.com/premium-photo/guy-on-the-edge-of-the-prelude-to-preikestolen-norway_7509-960.jpg?size=626&ext=jpg&ga=GA1.1.1818441046.1720137018&semt=ais_user" alt="">
+            <h1 class="text-t">Спасибо за внимание!</h1>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+@import url('/src/styles/allStyle/oneSection-style.css');
+@import url('/src/styles/allStyle/twoSection-style.css');
+@import url('/src/styles/allStyle/fonts.css');
+@import url('/src/styles/allStyle/test.style.css');
+@import url('/src/styles/allStyle/reset-style.css');
+
+body {
+    font-family: 'Afacad';
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}

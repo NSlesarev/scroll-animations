@@ -55,10 +55,6 @@ img {
     font-weight: bold;
 }
 
-.container h1 :last-child {
-    width: 70vw;
-}
-
 .text-t {
     color: #007BFF;
     font-size: clamp(4.9vw, 4.9vw, 25.9vw);
